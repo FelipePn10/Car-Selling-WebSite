@@ -1,56 +1,51 @@
 @charset "UTF-8";
 
-/* Estilo para o formulário */
-form {
-    background-color: #ffe330; /* yellow */
-    padding: 20px;
-    border: .1rem solid rgba(0, 0, 0, .1);
-    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.521);
-    border-radius: 10px;
-    width: 300px;
+
+:root {
+    --yellow:#f9d806;
+    --ligth-yellow:#ffe330;
+    --black:#130f40;
+    --ligth-color:#666;
+    --border:.1rem solid rgba(0,0,0,.1);
+    --box-shadow:0 .5rem 1rem rgba(0, 0, 0, 0.404);
+
 }
 
-/* Estilo para rótulos */
-label {
-    display: block;
-    margin: 10px 0;
-    color: #130f40; /* black */
+
+h1 {
+    text-align: center;
+    font-size: 2.8vw;
+    text-transform: uppercase;
+    color: var(--black);
 }
 
-/* Estilo para campos de entrada de texto e número */
-input[type="text"],
-input[type="number"],
-textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 6px 0;
-    box-sizing: border-box;
-    border: 1px solid #666; /* light-color */
-    border-radius: 4px;
+p{
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: var(--ligth-color);
+    text-align: center;
 }
 
-/* Estilo para botão de envio */
-input[type="submit"] {
-    background-color: #130f40; /* black */
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+a{
+    color: var(--yellow);
+    font-weight: bold;
 }
 
-/* Estilo para radio buttons */
-input[type="radio"] {
-    margin-right: 5px;
+a{
+    color: var(--black);
+    font-weight: bolder;
 }
 
-/* Estilo para caixa de comentários */
-textarea {
-    resize: vertical;
+a:hover{
+    color: var(--yellow);
 }
 
-/* Estilo para as mensagens de erro (se você usar JavaScript para validação) */
-.error-message {
-    color: red;
-    margin-top: 5px;
+iframe{
+    
+        width: 100%; /* Ocupa toda a largura do contêiner pai */
+        height: 500px; /* Defina a altura desejada para o iframe */
+        border: 1px solid #ccc; /* Adiciona uma borda ao redor do iframe */
+        border-radius: 8px; /* Adiciona cantos arredondados à borda do iframe */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao iframe */
 }
+
