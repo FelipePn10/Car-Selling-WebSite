@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/* Estilo para o formulário */
+form {
+    background-color: #ffe330; /* yellow */
+    padding: 20px;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.521);
+    border-radius: 10px;
+    width: 300px;
+}
+
+/* Estilo para rótulos */
+label {
+    display: block;
+    margin: 10px 0;
+    color: #130f40; /* black */
+}
+
+/* Estilo para campos de entrada de texto e número */
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    border: 1px solid #666; /* light-color */
+    border-radius: 4px;
+}
+
+/* Estilo para botão de envio */
+input[type="submit"] {
+    background-color: #130f40; /* black */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Estilo para radio buttons */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Estilo para caixa de comentários */
+textarea {
+    resize: vertical;
+}
+
+/* Estilo para as mensagens de erro (se você usar JavaScript para validação) */
+.error-message {
+    color: red;
+    margin-top: 5px;
+}
